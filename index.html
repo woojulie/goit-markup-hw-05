@@ -627,40 +627,52 @@
             <label class="call-back-form-label" for="user-first-name"
               >Name</label
             >
-            <input
-              class="call-back-form-input"
-              name="user-first-name"
-              id="user-first-name"
-              type="text"
-              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
-              title="Julie"
-              required
-            />
-            <svg>
-              <use href=""></use>
-            </svg>
+            <div class="call-back-input-wrapper">
+              <input
+                class="call-back-form-input"
+                name="user-first-name"
+                id="user-first-name"
+                type="text"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                title="Julie"
+                required
+              />
+              <svg class="call-back-label-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
           <div class="call-back-field-wrapper">
             <label class="call-back-form-label" for="user-tel">Phone</label>
-            <input
-              class="call-back-form-input"
-              name="user-tel"
-              id="user-tel"
-              type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
-              required
-            />
+            <div class="call-back-input-wrapper">
+              <input
+                class="call-back-form-input"
+                name="user-tel"
+                id="user-tel"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg class="call-back-label-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="call-back-field-wrapper">
             <label class="call-back-form-label" for="user-email">Email</label>
-            <input
-              class="call-back-form-input"
-              name="user-email"
-              id="user-email"
-              type="email"
-              required
-            />
+            <div class="call-back-input-wrapper">
+              <input
+                class="call-back-form-input"
+                name="user-email"
+                id="user-email"
+                type="email"
+                required
+              />
+              <svg class="call-back-label-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="call-back-field-wrapper">
@@ -669,20 +681,26 @@
               class="call-back-comment"
               name="user-comment"
               id="user-comment"
+              placeholder="Text input"
             ></textarea>
           </div>
 
           <div class="call-back-form-checkbox">
             <input
               type="checkbox"
-              class="call-back-checkbox"
+              class="call-back-checkbox visually-hidden"
               name="privacy-policy"
               id="privacy-policy"
               value="true"
               required
             />
-            <label for="privacy-policy" class="call-back-form-checkbox-label"
-              >I accept the terms and conditions of the
+            <label for="privacy-policy" class="call-back-form-checkbox-label">
+              <span class="call-back-own-checkbox">
+                <svg class="call-back-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a class="privacy-policy-link" href="">Privacy Policy</a></label
             >
           </div>
