@@ -571,10 +571,11 @@ body {
     border: none;
 }
 .modal-close-btn-icon {
-    fill: fill: #2e2f42;
+    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-button:hover, .modal-close-button:focus + .modal-close-btn-icon {
+.modal-close-button:hover .modal-close-btn-icon,
+.modal-close-button:focus .modal-close-btn-icon {
     fill: #FFFFFF;
 }
 .call-back-field-wrapper {
